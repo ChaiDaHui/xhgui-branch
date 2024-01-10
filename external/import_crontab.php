@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('UTC');
 if (!defined('XHGUI_ROOT_DIR')) {
     require dirname(dirname(__FILE__)) . '/src/bootstrap.php';
 }
