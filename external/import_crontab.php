@@ -11,7 +11,7 @@ $timeInterval = 1;          // 时间间隔不可修改，存在 sed 匹配异�
 // 匹配日志时间
 $fileName = date('Ymd', $curTime - $timeInterval * 60);
 $pregTime = date('Y-m-d H:i', $curTime - $timeInterval * 60);
-$filePath = '/tmp//xhprof/' . $fileName . '.xhprof';
+$filePath = '/tmp/xhprof/' . $fileName . '.xhprof';
 $cmd = "sed -n '/^$pregTime/p' $filePath";
 
 if (!file_exists($filePath)) return;
