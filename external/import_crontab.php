@@ -17,7 +17,6 @@ if (!file_exists($filePath)) return;
 
 try {
     // 读取数据
-    echo $cmd . PHP_EOL;
     exec($cmd, $output);
     if (empty($output)) return;
 
