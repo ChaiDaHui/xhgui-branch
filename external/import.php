@@ -27,7 +27,7 @@ $saver = $container['saverMongo'];
 
 while (!feof($fp)) {
     $line = fgets($fp);
-    $data = json_decode($line, true);
+    $data = json_decode(substr($line, 20), true);
     if ($data) {
         $saver->save($data);
     }
