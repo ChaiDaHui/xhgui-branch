@@ -1,4 +1,9 @@
 <?php
+/**
+ * 导入操作
+ * php external/import.php -f=filePath
+ */
+
 if (!defined('XHGUI_ROOT_DIR')) {
     require dirname(dirname(__FILE__)) . '/src/bootstrap.php';
 }
